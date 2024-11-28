@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
+# Set python version to 2.7
+pyenv shell 2.7
+echo `python --version`
 # TODO abhip: Changes to make it runnable from an external project as submodule
 if [[ $# -eq 4 ]]; then
 	echo -n "" > $2
