@@ -1,8 +1,10 @@
 [Shakti Standard Format (SSF)](http://ltrc.iiit.ac.in/nlptools2010/files/documents/SSF.pdf) is a representation for storing linguistic analysis of natural languages. Its widely being used for storing treebank annotations of Indian Languages. However, in order to train dependency parsers on treebank annotations, the annotations should be in [CONLL](https://code.google.com/p/clearparser/wiki/DataFormat) format. The SSF-to-CONLL convertor facilitates this conversion.
 
 __How to use?__
+Open a bash shell and run from the repository root directory.
+I can use `pyenv` to use a python 2.7 version.
 ```
-bash ssf2conll.sh <input (file|directory)> <output file> <log file> <annotation type (intra|inter)>
+./ssf2conll.sh <input ./ssf2conll.sh ssf2conll/hindi_test.ssf hindi_test.conll hindi_test.log intra
 ```
 __Input Data Format__: *Intra-Chunk vs Inter-Chunk*
 
